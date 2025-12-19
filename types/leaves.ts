@@ -1,4 +1,4 @@
-interface LeaveRequest {
+export interface LeaveRequest {
   id: string;
   employeeName: string;
   leaveType: "annual" | "sick" | "personal" | "unpaid";

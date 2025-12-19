@@ -1,19 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
-interface Activity {
-  id: string;
-  user: {
-    name: string;
-    avatar?: string;
-  };
-  action: string;
-  timestamp: string;
-}
-
-interface RecentActivityProps {
-  activities: Activity[];
-}
+import type { RecentActivityProps } from "@/types/dashboard";
 
 function getInitials(name: string) {
   return name

@@ -3,11 +3,7 @@
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { SidebarNav } from "./sidebar-nav";
 import { Topbar } from "./topbar";
-
-interface DashboardLayoutProps {
-  children: React.ReactNode;
-  title?: string;
-}
+import type { DashboardLayoutProps } from "@/types/dashboard";
 
 export function DashboardLayout({ children, title }: DashboardLayoutProps) {
   return (

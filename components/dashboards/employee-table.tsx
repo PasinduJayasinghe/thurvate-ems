@@ -13,10 +13,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { MoreHorizontal } from "lucide-react";
 import type { Employee } from "@/types/employee";
-
-interface EmployeeTableProps {
-  employees: Employee[];
-}
+import type { EmployeeTableProps } from "@/types/dashboard";
 
 function getStatusVariant(status: Employee["status"]) {
   switch (status) {

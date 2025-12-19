@@ -12,10 +12,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-
-interface TopbarProps {
-  title?: string;
-}
+import type { TopbarProps } from "@/types/dashboard";
 
 export function Topbar({ title = "Dashboard" }: TopbarProps) {
   return (
