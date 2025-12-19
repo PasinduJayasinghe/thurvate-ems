@@ -14,6 +14,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Plus, Search, Check, X } from "lucide-react";
+import type { LeaveRequest } from "@/types/leaves";
 
 export default function LeaveRequestsPage() {
   const [leaveRequests, setLeaveRequests] = useState<LeaveRequest[]>([]);
