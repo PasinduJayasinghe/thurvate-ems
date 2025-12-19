@@ -7,4 +7,7 @@ export interface Employee {
   status: "active" | "inactive" | "on-leave";
   avatar?: string;
   joinDate: string;
+  created_at?: string;
+  updated_at?: string;
+  phone?: string;
 }

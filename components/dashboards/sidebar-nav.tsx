@@ -21,6 +21,7 @@ import {
   Settings,
   LogOut,
   Building2,
+  Link,
 } from "lucide-react";
 
 const navItems = [
@@ -52,10 +53,10 @@ export function SidebarNav() {
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.href} className="flex items-center gap-3">
+                    <Link href={item.href} className="flex items-center gap-3">
                       <item.icon className="h-4 w-4" />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
