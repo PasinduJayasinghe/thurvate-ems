@@ -27,7 +27,7 @@ const navItems = [
   { title: "Dashboard", icon: LayoutDashboard, href: "/" },
   { title: "Employees", icon: Users, href: "/employees" },
   { title: "Departments", icon: Building2, href: "/departments" },
-  { title: "Leave Requests", icon: CalendarDays, href: "/leave" },
+  { title: "Leave Requests", icon: CalendarDays, href: "/leaves" },
   { title: "Payroll", icon: DollarSign, href: "/payroll" },
   { title: "Settings", icon: Settings, href: "/settings" },
 ];
