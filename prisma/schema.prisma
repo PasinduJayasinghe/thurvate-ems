@@ -26,5 +26,24 @@ model Employee {
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
 
+  leaves      LeaveRequest[]
+
   @@map("employees")
+}
+
+model LeaveRequest {
+  id           String   @id @default(uuid())
+  employeeId   String   @map("employee_id")
+  employeeName String   @map("employee_name")
+  leaveType    String   @map("leave_type")
+  startDate    DateTime @map("start_date")
+  endDate      DateTime @map("end_date")
+  reason       String
+  status       String   @default("pending")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  employee     Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+
+  @@map("leave_requests")
 }
