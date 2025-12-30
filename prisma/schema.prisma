@@ -11,6 +11,20 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("DATABASE_URL)
-  directUrl = env("DIRECT_URL)
+}
+
+model Employee {
+  id          String   @id @default(uuid())
+  name        String
+  email       String   @unique
+  role        String
+  department  String
+  status      String
+  avatar      String?
+  joinDate    DateTime
+  phone       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("employees")
 }
