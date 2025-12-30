@@ -21,8 +21,8 @@ import {
   Settings,
   LogOut,
   Building2,
-  Link,
 } from "lucide-react";
+import Link from "next/link";
 
 const navItems = [
   { title: "Dashboard", icon: LayoutDashboard, href: "/" },
